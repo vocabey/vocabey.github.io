@@ -1,0 +1,13 @@
+baseURL: https://vocabey.github.io/xtwitter-spam-blocker/
+locale: en-us
+title: X/Twitter Spam Blocker
+disableKinds: ["taxonomy", "term", "rss"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+
+caches:
+  images:
+    dir: :cacheDir/images
