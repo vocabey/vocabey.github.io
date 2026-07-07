@@ -1,4 +1,63 @@
 {{ define "main" }}
-  <h1>X/Twitter Spam Blocker</h1>
-  <p><a href="{{ "privacy/" | relURL }}">Privacy Policy</a></p>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="hero-brand">
+          <img class="hero-icon" src="{{ "images/app-icon-128.png" | relURL }}" alt="X/Twitter Spam Blocker icon" width="128" height="128" fetchpriority="high">
+          <div>
+            <p class="hero-name">X/Twitter Spam Blocker</p>
+            <p class="hero-category">Chrome extension for cleaner X/Twitter browsing</p>
+          </div>
+        </div>
+        <h1 id="hero-title">
+          <span>Clean X/Twitter spam.</span>
+          <span>Review risky accounts before blocking.</span>
+        </h1>
+        <p class="hero-lede">
+          Hide matching adult-spam replies and off-platform lure content on supported X/Twitter pages, then review
+          high-risk accounts in a floating panel before any block request is sent.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://chromewebstore.google.com/detail/dblhngajkkliljhlnilajjifnilkbjnb?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install from Chrome Web Store</a>
+          <a class="button button-secondary" href="{{ "how-it-works/" | relURL }}">Read how it works</a>
+        </div>
+      </div>
+      <div class="hero-features" aria-label="Core product features">
+        <p class="hero-feature-label">Core features</p>
+        <div class="hero-feature-list">
+          <div class="hero-feature">
+            <strong>Clean spam while you browse</strong>
+            <span>Clean matching adult-spam replies and lure patterns on supported X/Twitter pages.</span>
+          </div>
+          <div class="hero-feature">
+            <strong>Review before blocking</strong>
+            <span>High-risk accounts appear in a floating panel so you can choose which accounts to block.</span>
+          </div>
+          <div class="hero-feature">
+            <strong>Track local cleanup results</strong>
+            <span>Use dashboard statistics and the Activity Log to review local cleanup results.</span>
+          </div>
+          <div class="hero-feature">
+            <strong>Local-first by design</strong>
+            <span>Settings, protection statistics, and activity history stay on your device in the current version.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="docs">
+    <div class="section-header">
+      <h2 id="docs">Learn before you install</h2>
+      <p>Short user guides explain the product's purpose, setup flow, privacy posture, and current limits.</p>
+    </div>
+    <div class="doc-grid">
+      {{ range .Site.RegularPages.ByWeight }}
+        <article class="doc-card">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Description }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </section>
 {{ end }}

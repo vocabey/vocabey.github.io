@@ -1,6 +1,21 @@
 {{ define "main" }}
-  <article>
-    {{ .Content }}
-  </article>
+  <div class="article-shell">
+    <div class="article-layout">
+      <article class="article">
+        {{ .Content }}
+      </article>
+      <aside class="side-nav" aria-label="Product documentation">
+        <p class="side-nav-title">Product docs</p>
+        <ul>
+          {{ range .Site.RegularPages.ByWeight }}
+            <li>
+              <a href="{{ .RelPermalink }}" {{ if eq $.RelPermalink .RelPermalink }}aria-current="page"{{ end }}>
+                {{ .Title }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </aside>
+    </div>
+  </div>
 {{ end }}
-

@@ -1,6 +1,8 @@
 ---
 title: "Privacy Policy"
+description: "Privacy policy for X/Twitter Spam Blocker."
 date: 2026-07-03
+weight: 60
 ---
 
 # Privacy Policy for X/Twitter Spam Blocker
@@ -13,6 +15,8 @@ X/Twitter Spam Blocker is a browser extension that helps users clean spam on X/T
 
 The extension processes X/Twitter page content on the user's device, including tweet text, account/profile information, links, and related spam-matching
 signals. This processing is used only to detect spam, hide matching content, show block review candidates, and record local protection activity.
+
+The extension does not process unrelated websites.
 
 ## Local Storage
 
