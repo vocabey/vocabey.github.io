@@ -3,43 +3,42 @@
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="hero-brand">
-          <img class="hero-icon" src="{{ "images/app-icon-128.png" | relURL }}" alt="X/Twitter Spam Blocker icon" width="128" height="128" fetchpriority="high">
+          <img class="hero-icon" src="{{ "images/app-icon-128.png" | relURL }}" alt="{{ T "hero_icon_alt" }}" width="128" height="128" fetchpriority="high">
           <div>
             <p class="hero-name">X/Twitter Spam Blocker</p>
-            <p class="hero-category">Chrome extension for cleaner X/Twitter browsing</p>
+            <p class="hero-category">{{ T "hero_category" }}</p>
           </div>
         </div>
         <h1 id="hero-title">
-          <span>Clean X/Twitter spam.</span>
-          <span>Review risky accounts before blocking.</span>
+          <span>{{ T "hero_title_line_1" }}</span>
+          <span>{{ T "hero_title_line_2" }}</span>
         </h1>
         <p class="hero-lede">
-          Hide matching adult-spam replies and off-platform lure content on supported X/Twitter pages, then review
-          high-risk accounts in a floating panel before any block request is sent.
+          {{ T "hero_lede" }}
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://chromewebstore.google.com/detail/dblhngajkkliljhlnilajjifnilkbjnb?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install from Chrome Web Store</a>
-          <a class="button button-secondary" href="{{ "how-it-works/" | relURL }}">Read how it works</a>
+          <a class="button button-primary" href="https://chromewebstore.google.com/detail/dblhngajkkliljhlnilajjifnilkbjnb?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">{{ T "hero_install" }}</a>
+          <a class="button button-secondary" href="{{ "how-it-works/" | relLangURL }}">{{ T "hero_read_how" }}</a>
         </div>
       </div>
-      <div class="hero-features" aria-label="Core product features">
-        <p class="hero-feature-label">Core features</p>
+      <div class="hero-features" aria-label="{{ T "core_features_label" }}">
+        <p class="hero-feature-label">{{ T "core_features_label" }}</p>
         <div class="hero-feature-list">
           <div class="hero-feature">
-            <strong>Clean spam while you browse</strong>
-            <span>Clean matching adult-spam replies and lure patterns on supported X/Twitter pages.</span>
+            <strong>{{ T "feature_clean_title" }}</strong>
+            <span>{{ T "feature_clean_text" }}</span>
           </div>
           <div class="hero-feature">
-            <strong>Review before blocking</strong>
-            <span>High-risk accounts appear in a floating panel so you can choose which accounts to block.</span>
+            <strong>{{ T "feature_review_title" }}</strong>
+            <span>{{ T "feature_review_text" }}</span>
           </div>
           <div class="hero-feature">
-            <strong>Track local cleanup results</strong>
-            <span>Use dashboard statistics and the Activity Log to review local cleanup results.</span>
+            <strong>{{ T "feature_track_title" }}</strong>
+            <span>{{ T "feature_track_text" }}</span>
           </div>
           <div class="hero-feature">
-            <strong>Local-first by design</strong>
-            <span>Settings, protection statistics, and activity history stay on your device in the current version.</span>
+            <strong>{{ T "feature_local_title" }}</strong>
+            <span>{{ T "feature_local_text" }}</span>
           </div>
         </div>
       </div>
@@ -48,8 +47,8 @@
 
   <section class="section" aria-labelledby="docs">
     <div class="section-header">
-      <h2 id="docs">Learn before you install</h2>
-      <p>Short user guides explain the product's purpose, setup flow, privacy posture, and current limits.</p>
+      <h2 id="docs">{{ T "docs_title" }}</h2>
+      <p>{{ T "docs_text" }}</p>
     </div>
     <div class="doc-grid">
       {{ range .Site.RegularPages.ByWeight }}

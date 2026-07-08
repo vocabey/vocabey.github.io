@@ -1,0 +1,98 @@
+[meta_description]
+other = "Clean matching spam on X/Twitter and review risky accounts before blocking."
+
+[brand_home_label]
+other = "X/Twitter Spam Blocker home"
+
+[primary_navigation]
+other = "Primary navigation"
+
+[footer_navigation]
+other = "Footer navigation"
+
+[nav_features]
+other = "Features"
+
+[nav_getting_started]
+other = "Getting Started"
+
+[nav_how_it_works]
+other = "How It Works"
+
+[nav_faq]
+other = "FAQ"
+
+[nav_install]
+other = "Install"
+
+[footer_disclaimer]
+other = "X/Twitter Spam Blocker is independent and not affiliated with X Corp. or Twitter."
+
+[footer_privacy]
+other = "Privacy Policy"
+
+[footer_safety]
+other = "Safety and Limitations"
+
+[footer_support]
+other = "Support"
+
+[hero_icon_alt]
+other = "X/Twitter Spam Blocker icon"
+
+[hero_category]
+other = "Chrome extension for cleaner X/Twitter browsing"
+
+[hero_title_line_1]
+other = "Clean X/Twitter spam."
+
+[hero_title_line_2]
+other = "Review risky accounts before blocking."
+
+[hero_lede]
+other = "Hide matching adult-spam replies and off-platform lure content on supported X/Twitter pages, then review high-risk accounts in a floating panel before any block request is sent."
+
+[hero_install]
+other = "Install from Chrome Web Store"
+
+[hero_read_how]
+other = "Read how it works"
+
+[core_features_label]
+other = "Core features"
+
+[feature_clean_title]
+other = "Clean spam while you browse"
+
+[feature_clean_text]
+other = "Clean matching adult-spam replies and lure patterns on supported X/Twitter pages."
+
+[feature_review_title]
+other = "Review before blocking"
+
+[feature_review_text]
+other = "High-risk accounts appear in a floating panel so you can choose which accounts to block."
+
+[feature_track_title]
+other = "Track local cleanup results"
+
+[feature_track_text]
+other = "Use dashboard statistics and the Activity Log to review local cleanup results."
+
+[feature_local_title]
+other = "Local-first by design"
+
+[feature_local_text]
+other = "Settings, protection statistics, and activity history stay on your device in the current version."
+
+[docs_title]
+other = "Learn before you install"
+
+[docs_text]
+other = "Short user guides explain the product's purpose, setup flow, privacy posture, and current limits."
+
+[product_documentation]
+other = "Product documentation"
+
+[product_docs]
+other = "Product docs"

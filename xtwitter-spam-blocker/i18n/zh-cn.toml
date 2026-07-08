@@ -1,0 +1,98 @@
+[meta_description]
+other = "清理 X/Twitter 上命中的垃圾内容，并在拉黑风险账号前先进行审核。"
+
+[brand_home_label]
+other = "X/Twitter Spam Blocker 首页"
+
+[primary_navigation]
+other = "主导航"
+
+[footer_navigation]
+other = "页脚导航"
+
+[nav_features]
+other = "功能"
+
+[nav_getting_started]
+other = "快速开始"
+
+[nav_how_it_works]
+other = "工作原理"
+
+[nav_faq]
+other = "常见问题"
+
+[nav_install]
+other = "安装"
+
+[footer_disclaimer]
+other = "X/Twitter Spam Blocker 是独立浏览器扩展，与 X Corp. 或 Twitter 没有关联。"
+
+[footer_privacy]
+other = "隐私政策"
+
+[footer_safety]
+other = "安全与限制"
+
+[footer_support]
+other = "支持"
+
+[hero_icon_alt]
+other = "X/Twitter Spam Blocker 图标"
+
+[hero_category]
+other = "让 X/Twitter 浏览更干净的 Chrome 扩展"
+
+[hero_title_line_1]
+other = "清理 X/Twitter 垃圾内容。"
+
+[hero_title_line_2]
+other = "拉黑前先审核风险账号。"
+
+[hero_lede]
+other = "在支持的 X/Twitter 页面中隐藏命中的成人垃圾回复、站外引流内容和不想看到的推广回复；遇到高风险账号时，先在浮动面板中审核，再决定是否拉黑。"
+
+[hero_install]
+other = "从 Chrome Web Store 安装"
+
+[hero_read_how]
+other = "了解工作原理"
+
+[core_features_label]
+other = "核心功能"
+
+[feature_clean_title]
+other = "浏览时清理垃圾内容"
+
+[feature_clean_text]
+other = "在支持的 X/Twitter 页面中清理命中的成人垃圾回复、引流模式和推广回复。"
+
+[feature_review_title]
+other = "拉黑前先审核"
+
+[feature_review_text]
+other = "高风险账号会进入浮动审核面板，由你选择哪些账号需要拉黑。"
+
+[feature_track_title]
+other = "查看本地清理结果"
+
+[feature_track_text]
+other = "通过保护概览和活动记录查看本设备上的清理结果。"
+
+[feature_local_title]
+other = "本地优先设计"
+
+[feature_local_text]
+other = "当前版本中，设置、保护统计和活动历史会保存在你的设备本地。"
+
+[docs_title]
+other = "安装前先了解"
+
+[docs_text]
+other = "这些简短文档说明产品用途、使用流程、隐私设计和当前限制。"
+
+[product_documentation]
+other = "产品文档"
+
+[product_docs]
+other = "产品文档"

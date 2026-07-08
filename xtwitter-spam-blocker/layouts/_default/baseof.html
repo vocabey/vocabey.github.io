@@ -3,9 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Clean matching spam on X/Twitter and review risky accounts before blocking.{{ end }}">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ T "meta_description" }}{{ end }}">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+    {{ if eq .Language.Lang "en" }}
+      <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
   <style>
     :root {
       color-scheme: light;
@@ -120,6 +126,12 @@
       background: var(--ink);
       color: #ffffff !important;
       font-weight: 700;
+    }
+
+    .language-switch {
+      border-left: 1px solid var(--line);
+      padding-left: 18px;
+      white-space: nowrap;
     }
 
     .site-main {
@@ -494,6 +506,11 @@
         padding-bottom: 3px;
       }
 
+      .language-switch {
+        border-left: 0;
+        padding-left: 0;
+      }
+
       .hero {
         min-height: auto;
       }
@@ -551,16 +568,23 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand-link" href="{{ "" | relURL }}" aria-label="X/Twitter Spam Blocker home">
+      <a class="brand-link" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ T "brand_home_label" }}">
         <img class="brand-mark" src="{{ "images/app-icon-128.png" | relURL }}" alt="" width="28" height="28">
         <span>X/Twitter Spam Blocker</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="{{ "features/" | relURL }}">Features</a>
-        <a href="{{ "getting-started/" | relURL }}">Getting Started</a>
-        <a href="{{ "how-it-works/" | relURL }}">How It Works</a>
-        <a href="{{ "faq/" | relURL }}">FAQ</a>
-        <a class="nav-cta" href="https://chromewebstore.google.com/detail/dblhngajkkliljhlnilajjifnilkbjnb?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install</a>
+      <nav class="site-nav" aria-label="{{ T "primary_navigation" }}">
+        <a href="{{ "features/" | relLangURL }}">{{ T "nav_features" }}</a>
+        <a href="{{ "getting-started/" | relLangURL }}">{{ T "nav_getting_started" }}</a>
+        <a href="{{ "how-it-works/" | relLangURL }}">{{ T "nav_how_it_works" }}</a>
+        <a href="{{ "faq/" | relLangURL }}">{{ T "nav_faq" }}</a>
+        {{ range .AllTranslations }}
+          {{ if ne .Language.Lang $.Site.Language.Lang }}
+            <a class="language-switch" href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Lang }}">
+              {{ if eq .Language.Lang "zh-cn" }}简体中文{{ else }}English{{ end }}
+            </a>
+          {{ end }}
+        {{ end }}
+        <a class="nav-cta" href="https://chromewebstore.google.com/detail/dblhngajkkliljhlnilajjifnilkbjnb?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">{{ T "nav_install" }}</a>
       </nav>
     </div>
   </header>
@@ -569,11 +593,11 @@
   </main>
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>X/Twitter Spam Blocker is independent and not affiliated with X Corp. or Twitter.</div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="{{ "privacy/" | relURL }}">Privacy Policy</a>
-        <a href="{{ "safety-and-limitations/" | relURL }}">Safety</a>
-        <a href="{{ "support/" | relURL }}">Support</a>
+      <div>{{ T "footer_disclaimer" }}</div>
+      <nav class="footer-links" aria-label="{{ T "footer_navigation" }}">
+        <a href="{{ "privacy/" | relLangURL }}">{{ T "footer_privacy" }}</a>
+        <a href="{{ "safety-and-limitations/" | relLangURL }}">{{ T "footer_safety" }}</a>
+        <a href="{{ "support/" | relLangURL }}">{{ T "footer_support" }}</a>
       </nav>
     </div>
   </footer>

@@ -1,7 +1,22 @@
 baseURL: https://vocabey.github.io/xtwitter-spam-blocker/
-locale: en-us
 title: X/Twitter Spam Blocker
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 disableKinds: ["taxonomy", "term", "rss"]
+
+languages:
+  en:
+    contentDir: content/en
+    label: English
+    locale: en-US
+    title: X/Twitter Spam Blocker
+    weight: 1
+  zh-cn:
+    contentDir: content/zh-cn
+    label: 简体中文
+    locale: zh-CN
+    title: X/Twitter Spam Blocker
+    weight: 2
 
 markup:
   goldmark:
