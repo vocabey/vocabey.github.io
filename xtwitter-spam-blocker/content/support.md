@@ -1,18 +1,24 @@
 ---
 title: "Support and Contact"
-description: "Contact support by email or open a GitHub issue for bugs, broken behavior, and product questions."
+description: "Contact support by email, join the Discord community, or open a GitHub issue for bugs, broken behavior, and product questions."
 weight: 70
 ---
 
 # Support and Contact
 
-If you need help with X/Twitter Spam Blocker, you can contact support by email or open an issue on GitHub.
+If you need help with X/Twitter Spam Blocker, you can contact support by email, join the Discord community, or open an issue on GitHub.
 
 ## Email
 
 For privacy questions, support requests, or product feedback, email:
 
 [vocabey@gmail.com](mailto:vocabey@gmail.com)
+
+## Discord Community
+
+For product discussions, quick questions, and community feedback, join the Discord:
+
+[https://discord.gg/Xja6KRNrG](https://discord.gg/Xja6KRNrG)
 
 ## GitHub Issues
 
